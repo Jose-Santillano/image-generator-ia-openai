@@ -32,7 +32,7 @@ const startServer = async () => {
 
     //We try the connection with MongoDB.
     try {
-        connectDB(process.env.MongoDB_URL);
+        connectDB(process.env.MONGODB_URL);
         app.listen(8080, () => console.log("Server running on port 8080..."));
     } catch (error) {
         console.log(error);
